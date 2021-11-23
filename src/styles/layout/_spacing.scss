@@ -1,0 +1,61 @@
+$xxsmall: 8px;
+$xsmall: 12px;
+$small: 16px;
+$medium: 24px;
+$large: 32px;
+$xlarge: 40px;
+
+.margin-left-xsmall {
+    margin-left: $xsmall;
+}
+
+.margin-right-xxsmall {
+    margin-right: $xxsmall;
+}
+
+.margin-right-xsmall {
+    margin-right: $xsmall;
+}
+
+.margin-bottom-xsmall {
+    margin-bottom: $xsmall;
+}
+
+.margin-bottom-medium {
+    margin-bottom: $medium;
+}
+
+.margin-bottom-large {
+    margin-bottom: $large;
+}
+
+.margin-bottom-xlarge {
+    margin-bottom: $xlarge;
+}
+
+.margin-top-xsmall {
+    margin-top: $xsmall;
+}
+
+.margin-top-small {
+    margin-top: $small;
+}
+
+.padding-bottom-xsmall {
+    padding-bottom: $xsmall;
+}
+
+.padding-bottom-small {
+    padding-bottom: $small;
+}
+
+.flex-wrap-none {
+    -ms-flex-wrap: none;
+    flex-wrap: none;
+}
+
+.justify-between {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}

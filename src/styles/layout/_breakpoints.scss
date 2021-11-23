@@ -1,0 +1,23 @@
+// 320 - 599
+// 600 - 1279
+// 1280 - 1920
+$breakpoints: ('small': 599px,
+    'medium': 1279px,
+    'custombp1': 699px,
+    'custombp2': 450px);
+
+@mixin respond-to($breakpoint) {
+
+    // if breakpoint exists in breakpoints map
+    @if map-has-key($breakpoints, $breakpoint) {
+
+        // create media query for specified breakpoint
+        @media (max-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "No breakpoint retrieved from `#{$breakpoint}`."
+    }
+}

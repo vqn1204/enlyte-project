@@ -1,0 +1,82 @@
+// borders
+$border-radius: 5px;
+$border-size-thin: 1px;
+$border-color-light: $mocha20;
+
+@mixin border-bottom($size, $style, $color) {
+    border-bottom: $size $style $color;
+}
+
+.border-bottom-thin-light {
+    @include border-bottom($border-size-thin, solid, $border-color-light);
+}
+
+// flexbox
+.display-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.align-center {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.align-end {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: end;
+}
+
+.align-self-end {
+    -ms-flex-item-align: end;
+    align-self: end;
+}
+
+.justify-end {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+}
+
+@include respond-to(small) {
+    .flex-dir-sm-column {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+
+// lists
+.bordered-list-container {
+    .bordered-list-item:not(:last-child) {
+        @include border-bottom($border-size-thin, solid, $border-color-light);
+        margin-bottom: $small;
+        padding-bottom: $small;
+    }
+}
+
+// background colors
+.bg-green {
+    background-color: $green;
+}
+
+.bg-hi-alert {
+    background-color: $red;
+}
+
+.bg-alert {
+    background-color: $orange;
+}
+
+.bg-gold {
+    background-color: $gold;
+}
+
+.bg-ub40 {
+    background-color: $ub40;
+}

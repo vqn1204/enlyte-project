@@ -1,0 +1,75 @@
+<div class="margin-bottom-xsmall card">
+  <div class="display-flex margin-bottom-xlarge header-text">
+    <div class="col-6 col-bp1-12">
+      <h4>Total Movie Sales</h4>
+      <p>Comparison - Movie 1 and Movie 2</p>
+    </div>
+    <div class="col-6 col-bp1-12 text-align-right right-text-section">
+      <p>
+        Average value of sales in the past month in:
+        <span class="medium-weight">United States</span>
+      </p>
+      <p>All sales: 162,862</p>
+    </div>
+  </div>
+  <div class="display-flex margin-bottom-medium chart-section">
+    <app-chart
+      [xAxisData]="xAxisData"
+      [yAxisData]="yAxisData"
+      [colors]="colors"
+      class="col-9 col-bp1-12"
+    ></app-chart>
+    <div class="col-3 col-bp1-12">
+      <div class="margin-bottom-xlarge">
+        <p class="font-size-md text-black">2,346</p>
+        <p class="margin-bottom-xsmall">Total orders - Movie 1</p>
+        <app-progress-bar
+          [meterColor]="'bg-hi-alert'"
+          [customColor]="'#7F7D79'"
+          [max]="100"
+          [current]="25"
+          class="col-12"
+        ></app-progress-bar>
+      </div>
+      <div>
+        <p class="font-size-md text-black">2,346</p>
+        <p class="margin-bottom-xsmall">Total orders - Movie 1</p>
+        <app-progress-bar
+          [meterColor]="'bg-hi-alert'"
+          [customColor]="'green'"
+          [max]="100"
+          [current]="25"
+          class="col-12"
+        ></app-progress-bar>
+      </div>
+    </div>
+  </div>
+  <div class="display-flex footer-text">
+    <div class="col-9 col-bp1-12">
+      <p class="medium-weight">Analysis of sales:</p>
+      <p>
+        The value has been changed over time, and last month reached a level
+        over $50,000
+      </p>
+    </div>
+    <div class="col-3 col-bp1-12 text-align-right align-self-end update-text">
+      <i class="far fa-clock font-size-sm margin-right-xxsmall"></i
+      ><span class="text-muted">Update on 16.07.2015</span>
+    </div>
+  </div>
+</div>
+
+<div class="display-flex movie-card-section">
+  <app-movie-card
+    [title]="'Movie 1'"
+    [listOfDates]="dates"
+    [releaseDate]="'04 Jan 2015'"
+    class="col-6 margin-right-xsmall"
+  ></app-movie-card>
+  <app-movie-card
+    [title]="'Movie 2'"
+    [listOfDates]="dates"
+    [releaseDate]="'05 Jan 2015'"
+    class="col-6"
+  ></app-movie-card>
+</div>

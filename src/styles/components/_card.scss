@@ -1,0 +1,18 @@
+@mixin card-base {
+    border-radius: $border-radius;
+    -webkit-box-shadow: 0px 0px 5px 1px $mocha30;
+    box-shadow: 0px 0px 5px 1px $mocha30;
+    background-color: $white;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    padding: $large $medium;
+
+
+    @include respond-to(custombp2) {
+        padding: $small $small;
+    }
+}
+
+.card {
+    @include card-base;
+}

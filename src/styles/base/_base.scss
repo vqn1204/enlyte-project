@@ -1,0 +1,14 @@
+html {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: $mocha10;
+    margin: $large;
+    font-family: 'Inter', sans-serif;
+
+    @include respond-to(small) {
+        margin: $small;
+    }
+}

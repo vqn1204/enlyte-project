@@ -1,0 +1,22 @@
+<div class="movie-card">
+  <h4>{{ title }}</h4>
+  <div class="display-flex sub-header">
+    <div class="medium-weight">
+      <span>Release Date</span>
+      <i class="far fa-clock font-size-sm"></i>
+    </div>
+    <span class="text-muted">{{ releaseDate }}</span>
+  </div>
+  <div class="bordered-list-container margin-top-xsmall">
+    <ng-container *ngFor="let date of listOfDates">
+      <div class="display-flex justify-between bordered-list-item align-center">
+        <p class="text-muted medium-weight">{{ date }}</p>
+        <app-button
+          [buttonColor]="'bg-ub40'"
+          [textColor]="'white'"
+          [text]="'Buy Tickets'"
+        ></app-button>
+      </div>
+    </ng-container>
+  </div>
+</div>

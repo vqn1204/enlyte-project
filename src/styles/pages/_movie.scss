@@ -1,0 +1,49 @@
+.movie-card-section {
+    app-movie-card {
+        margin-bottom: $small;
+    }
+
+    @include respond-to(custombp1) {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        app-movie-card {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@include respond-to(custombp1) {
+    .chart-section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .footer-text {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        .update-text {
+            text-align: left;
+            margin-top: $xsmall;
+        }
+    }
+
+    .header-text {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+
+        .right-text-section {
+            text-align: left;
+        }
+    }
+}
