@@ -9,7 +9,7 @@ import { EChartsOption } from 'echarts';
 export class ChartComponent implements OnInit {
   // Inputs:
   // xAxisData (string array): Input of categories that will be labeled on the X Axis.
-  // yAxisData (number array of number arrays): Input of data values that will be displayed on the Y axis.
+  // yAxisData (array of number array): Input of data values that will be displayed on the Y axis.
   //                                            Each array will correspond to a new set of data.
   // colors (string array): This will color the data point, line, and area for each set of data. Any valid input for the css property "color" will work.
 
@@ -31,6 +31,7 @@ export class ChartComponent implements OnInit {
         top: 8,
         left: 25,
         right: 30,
+        bottom: 20,
       },
       xAxis: {
         data: this.xAxisData,

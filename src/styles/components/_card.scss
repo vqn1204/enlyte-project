@@ -5,7 +5,7 @@
     background-color: $white;
     -ms-flex-negative: 1;
     flex-shrink: 1;
-    padding: $large $medium;
+    padding: $medium $medium;
 
 
     @include respond-to(custombp2) {

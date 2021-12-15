@@ -3,8 +3,9 @@
 .button {
     border: none;
     border-radius: $border-radius;
-    padding: $xsmall $medium;
+    padding: $xxsmall $small;
     font-size: $base-font-size;
+    font-weight: $semibold;
 
     &.bg-ub40 {
         &:hover {
@@ -15,6 +16,8 @@
             background-color: color.scale($ub40, $lightness: -15%);
         }
     }
+
+    // lightness function requires the base color to be passed as a parameter
 
     // we have to define these states for the rest of the available classes. is there an easier way to do it without being repetitive?
 }

@@ -1,5 +1,5 @@
 // font sizes
-$base-font-size: 16px;
+$base-font-size: 14px;
 $font-size-sm: 12px;
 $font-size-md: 24px;
 
@@ -20,7 +20,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 20px;
 }
 
 h5 {
@@ -29,6 +29,10 @@ h5 {
 
 h6 {
     font-size: 1rem;
+}
+
+.font-size-base {
+    font-size: $base-font-size;
 }
 
 .font-size-sm {
@@ -51,21 +55,25 @@ $semibold: 600;
     font-weight: $semibold;
 }
 
+h4 {
+    font-weight: $semibold;
+}
+
 // font colors
 p {
     color: $mocha60;
 }
 
 h4 {
-    font-weight: $medium-weight;
+    color: $mocha80;
 }
 
 .text-muted {
     color: $mocha60;
 }
 
-.text-black {
-    color: black;
+.text-dark {
+    color: $mocha80;
 }
 
 // spacing

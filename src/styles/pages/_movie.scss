@@ -1,6 +1,6 @@
 .movie-card-section {
     app-movie-card {
-        margin-bottom: $small;
+        margin-bottom: $xxsmall;
     }
 
     @include respond-to(custombp1) {
